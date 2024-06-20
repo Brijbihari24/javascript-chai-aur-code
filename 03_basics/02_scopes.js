@@ -16,7 +16,7 @@ if (true) {
     // var c  = 30;
     c = 30;
 
-    console.log("INNER :", a);
+    // console.log("INNER :", a);
 }
 
 // console.log(a);
@@ -27,12 +27,42 @@ if (true) {
 // scope level and mini-hoisting
 
 function one() {
-
     const username = "brij";
     function two() {
         const website = "youtube"
-        console.log(usernamer  + website);
+        // console.log(username);
+    }
+    // console.log(website);
+
+    two()
+}
+
+one()
+
+if(true){
+    const username = "brij";
+    if(username == "brij"){
+        const website  = "youtube"
+        // console.log(username + website);
     }
 
+    // console.log(website);
 
 }
+
+// console.log(username);
+
+
+// ++++++++++++++++++++++++++++++++++ intresting
+
+console.log(addOne(5));
+function addOne(num){
+    return num + 1
+}
+
+
+console.log(addTwo(5));
+ const addTwo =  function(num){
+    return num + 2
+}
+
